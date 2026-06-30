@@ -77,10 +77,10 @@ If a release download is not available, open the GitHub page, click the green **
 | Only Codex | `super-memory-codex-skill.zip` |
 | Only Claude Code | `super-memory-claude-code-skill.zip` |
 | Both Codex and Claude Code | `super-memory-full.zip` |
-| ChatGPT without local skills | `super-memory-full.zip`, then use `examples/SUPER_MEMORY.md` manually |
+| ChatGPT without local skills | `super-memory-full.zip`, then use `templates/SUPER_MEMORY.md` manually |
 | You are not sure | `super-memory-full.zip` |
 
-If you are a complete beginner, download **Everything in one ZIP**. It contains all files and examples.
+If you are a complete beginner, download **Everything in one ZIP**. It contains all useful files and the copyable memory template.
 
 ## What Super Memory Creates
 
@@ -223,7 +223,7 @@ You can use Super Memory even without installing a skill.
 1. Open your project folder.
 2. Create a folder named `.ai-handoff`.
 3. Inside it, create a file named `SUPER_MEMORY.md`.
-4. Copy the structure from [examples/SUPER_MEMORY.md](examples/SUPER_MEMORY.md).
+4. Copy the structure from [templates/SUPER_MEMORY.md](templates/SUPER_MEMORY.md).
 5. Tell any AI assistant:
 
 ```text
@@ -254,24 +254,58 @@ super-memory/
 ├── README.md                         # start here
 ├── LICENSE                           # MIT license: free to use, modify, and share
 ├── AUTHORS.md                        # project credit
-├── docs/
-│   ├── INSTALL.md                    # beginner-friendly install guide
-│   ├── FOLDER_GUIDE.md               # explains every folder and file
-│   └── COMMANDS.md                   # explains every command
 ├── skills/
 │   ├── codex/super-memory/           # Codex skill package
 │   └── claude-code/supermemory/      # Claude Code skill package
 ├── commands/
 │   └── claude-code/supermemory.md    # optional Claude Code slash command
-├── examples/
-│   └── SUPER_MEMORY.md               # example project memory file
-├── tools/
-│   └── supermemory.py                # helper script for advanced/manual use
+├── templates/
+│   └── SUPER_MEMORY.md               # copyable manual memory template
 └── .github/
     └── ISSUE_TEMPLATE/               # bug and feature request templates
 ```
 
-For a slower explanation of every folder, read [docs/FOLDER_GUIDE.md](docs/FOLDER_GUIDE.md).
+This is intentionally small. The older extra documentation and duplicate helper folders were removed so the ZIP is easier to understand.
+
+## What Each File Or Folder Means
+
+| Path | What it is | Do you need it? |
+| --- | --- | --- |
+| `README.md` | The main explanation page you are reading now. | Yes. Start here. |
+| `LICENSE` | The MIT license. It says people can use, copy, modify, and share Super Memory. | Keep it in the repo/package. |
+| `AUTHORS.md` | Short credit file showing the project author. | Useful for attribution. |
+| `skills/codex/super-memory/` | Ready-to-install Codex skill. | Needed if you use Codex. |
+| `skills/codex/super-memory/SKILL.md` | The actual Codex skill instructions. | Needed for Codex. |
+| `skills/codex/super-memory/agents/openai.yaml` | Codex display metadata: name, short description, default prompt. | Needed for a cleaner Codex skill listing. |
+| `skills/codex/super-memory/scripts/supermemory.py` | Helper script used by the Codex skill. | Needed for Codex helper commands. |
+| `skills/claude-code/supermemory/` | Ready-to-install Claude Code skill. | Needed if you use Claude Code. |
+| `skills/claude-code/supermemory/SKILL.md` | The actual Claude Code skill instructions. | Needed for Claude Code. |
+| `skills/claude-code/supermemory/scripts/supermemory.py` | Helper script used by the Claude Code skill. | Needed for Claude Code helper commands. |
+| `commands/claude-code/supermemory.md` | Optional Claude Code slash command wrapper. | Optional, only for `/supermemory`. |
+| `templates/SUPER_MEMORY.md` | A blank/example memory file you can copy into a project manually. | Useful for ChatGPT or manual use. |
+| `.github/ISSUE_TEMPLATE/` | GitHub issue forms for bug reports and feature requests. | Only useful on GitHub. |
+| `.gitignore` | Prevents local junk files from being committed. | Useful for GitHub/source users. |
+| `.gitattributes` | Keeps text files consistent across Windows/macOS/Linux. | Useful for GitHub/source users. |
+
+## What Can I Ignore?
+
+If you are not a developer, you can ignore these:
+
+- `.github/`
+- `.gitignore`
+- `.gitattributes`
+- `AUTHORS.md`
+
+Do not worry if you see them. They are normal GitHub project files. They do not need to be installed into Codex or Claude Code.
+
+## What Do I Actually Install?
+
+| Your tool | Only copy this |
+| --- | --- |
+| Codex | `skills/codex/super-memory/` |
+| Claude Code | `skills/claude-code/supermemory/` |
+| Claude Code slash command | `commands/claude-code/supermemory.md` |
+| ChatGPT/manual use | `templates/SUPER_MEMORY.md` into your project as `.ai-handoff/SUPER_MEMORY.md` |
 
 ## Why It Helps With Context Windows
 
@@ -429,7 +463,7 @@ Release indirmesi çalışmazsa GitHub sayfasını aç, yeşil **Code** düğmes
 | Sadece Codex | `super-memory-codex-skill.zip` |
 | Sadece Claude Code | `super-memory-claude-code-skill.zip` |
 | Hem Codex hem Claude Code | `super-memory-full.zip` |
-| Local skill kullanmadan ChatGPT | `super-memory-full.zip`, sonra `examples/SUPER_MEMORY.md` dosyasını manuel kullan |
+| Local skill kullanmadan ChatGPT | `super-memory-full.zip`, sonra `templates/SUPER_MEMORY.md` dosyasını manuel kullan |
 | Emin değilsen | `super-memory-full.zip` |
 
 Tamamen yeniysen **Her şey tek ZIP içinde** seçeneğini indir. İçinde bütün dosyalar ve örnekler vardır.
@@ -575,7 +609,7 @@ Super Memory'yi skill kurmadan da kullanabilirsin.
 1. Proje klasörünü aç.
 2. `.ai-handoff` adlı bir klasör oluştur.
 3. Bu klasörün içinde `SUPER_MEMORY.md` adlı bir dosya oluştur.
-4. [examples/SUPER_MEMORY.md](examples/SUPER_MEMORY.md) dosyasındaki yapıyı kopyala.
+4. [templates/SUPER_MEMORY.md](templates/SUPER_MEMORY.md) dosyasındaki yapıyı kopyala.
 5. Herhangi bir yapay zeka asistanına şunu söyle:
 
 ```text
@@ -606,24 +640,58 @@ super-memory/
 ├── README.md                         # buradan başla
 ├── LICENSE                           # MIT lisansı: kullanmak, değiştirmek ve paylaşmak serbest
 ├── AUTHORS.md                        # proje sahibi bilgisi
-├── docs/
-│   ├── INSTALL.md                    # yeni başlayanlar için kurulum rehberi
-│   ├── FOLDER_GUIDE.md               # her klasör ve dosyayı açıklar
-│   └── COMMANDS.md                   # her komutu açıklar
 ├── skills/
 │   ├── codex/super-memory/           # Codex skill paketi
 │   └── claude-code/supermemory/      # Claude Code skill paketi
 ├── commands/
 │   └── claude-code/supermemory.md    # isteğe bağlı Claude Code slash komutu
-├── examples/
-│   └── SUPER_MEMORY.md               # örnek proje hafızası dosyası
-├── tools/
-│   └── supermemory.py                # ileri/manuel kullanım için yardımcı script
+├── templates/
+│   └── SUPER_MEMORY.md               # kopyalanabilir manuel hafıza şablonu
 └── .github/
     └── ISSUE_TEMPLATE/               # hata ve özellik isteği şablonları
 ```
 
-Her klasörün daha yavaş ve ayrıntılı açıklaması için [docs/FOLDER_GUIDE.md](docs/FOLDER_GUIDE.md) dosyasını oku.
+Bu yapı bilerek küçük tutuldu. Eski ekstra dokümantasyon ve kopya yardımcı klasörler kaldırıldı, böylece ZIP dosyasını indiren biri neyin ne olduğunu daha kolay anlayabilir.
+
+## Her Dosya Veya Klasör Ne Demek?
+
+| Yol | Nedir? | Gerekli mi? |
+| --- | --- | --- |
+| `README.md` | Şu an okuduğun ana açıklama sayfası. | Evet. Buradan başla. |
+| `LICENSE` | MIT lisansı. Super Memory'nin kullanılabileceğini, kopyalanabileceğini, değiştirilebileceğini ve paylaşılabileceğini söyler. | Repo/paket içinde kalmalı. |
+| `AUTHORS.md` | Proje sahibini gösteren kısa kredi dosyası. | Atıf için faydalı. |
+| `skills/codex/super-memory/` | Hazır Codex skill paketi. | Codex kullanıyorsan gerekli. |
+| `skills/codex/super-memory/SKILL.md` | Codex'in okuyacağı asıl skill yönergeleri. | Codex için gerekli. |
+| `skills/codex/super-memory/agents/openai.yaml` | Codex'te görünen ad, kısa açıklama ve varsayılan prompt bilgisi. | Codex skill listesi daha düzgün görünsün diye gerekli. |
+| `skills/codex/super-memory/scripts/supermemory.py` | Codex skill'in kullandığı yardımcı script. | Codex yardımcı komutları için gerekli. |
+| `skills/claude-code/supermemory/` | Hazır Claude Code skill paketi. | Claude Code kullanıyorsan gerekli. |
+| `skills/claude-code/supermemory/SKILL.md` | Claude Code'un okuyacağı asıl skill yönergeleri. | Claude Code için gerekli. |
+| `skills/claude-code/supermemory/scripts/supermemory.py` | Claude Code skill'in kullandığı yardımcı script. | Claude Code yardımcı komutları için gerekli. |
+| `commands/claude-code/supermemory.md` | İsteğe bağlı Claude Code slash komutu. | Sadece `/supermemory` istiyorsan gerekli. |
+| `templates/SUPER_MEMORY.md` | Manuel kullanım için projeye kopyalayabileceğin boş/örnek hafıza dosyası. | ChatGPT veya manuel kullanım için faydalı. |
+| `.github/ISSUE_TEMPLATE/` | GitHub'da hata veya özellik isteği açmak için formlar. | Sadece GitHub tarafında faydalı. |
+| `.gitignore` | Yerel gereksiz dosyaların Git'e eklenmesini engeller. | GitHub/kaynak kod kullananlar için faydalı. |
+| `.gitattributes` | Windows/macOS/Linux arasında metin dosyalarını tutarlı tutar. | GitHub/kaynak kod kullananlar için faydalı. |
+
+## Neyi Görmezden Gelebilirim?
+
+Geliştirici değilsen şunları görmezden gelebilirsin:
+
+- `.github/`
+- `.gitignore`
+- `.gitattributes`
+- `AUTHORS.md`
+
+Bunları görünce kafan karışmasın. Bunlar normal GitHub proje dosyalarıdır. Codex veya Claude Code içine kurulmaları gerekmez.
+
+## Aslında Neyi Kuracağım?
+
+| Kullandığın araç | Sadece bunu kopyala |
+| --- | --- |
+| Codex | `skills/codex/super-memory/` |
+| Claude Code | `skills/claude-code/supermemory/` |
+| Claude Code slash komutu | `commands/claude-code/supermemory.md` |
+| ChatGPT/manuel kullanım | `templates/SUPER_MEMORY.md` dosyasını projenin içine `.ai-handoff/SUPER_MEMORY.md` olarak koy |
 
 ## Context Window Sorununa Nasıl Yardımcı Olur?
 
@@ -714,4 +782,3 @@ OpenAI, Anthropic, GitHub, Claude, Codex, ChatGPT veya Supermemory.ai ile bağla
 Super Memory iş akışına yardımcı olursa repoya yıldız vermen daha fazla kişinin keşfetmesine yardımcı olur. ⭐
 
 Başka bir yapay zeka aracı desteği, daha açık bir kurulum veya daha iyi bir hafıza biçimi istiyorsan issue açabilirsin.
-
