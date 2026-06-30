@@ -4,6 +4,98 @@
 
 Super Memory helps an AI assistant continue from the real latest state of a project, even when the original chat is too long, deleted, limited, or moved to another AI tool.
 
+## What Does It Actually Do?
+
+Imagine you are building a project with an AI coding assistant.
+
+You start in Codex. You explain the project, edit files, fix bugs, run tests, make decisions, and slowly the chat becomes long. Then your limit is reached, the context window gets full, or you decide Claude Code is better for the next part.
+
+Normally, you now have a problem:
+
+- the new AI does not know what happened before
+- you need to explain the whole project again
+- important decisions are hidden inside an old chat
+- failed attempts may be repeated
+- the next assistant may start from the wrong place
+
+Super Memory fixes this with one simple idea:
+
+> Keep the useful project memory inside the project folder, not only inside the chat.
+
+It creates a small file in your project, usually:
+
+```text
+.ai-handoff/SUPER_MEMORY.md
+```
+
+That file is kept up to date while you work. It stores the current goal, what changed, which files matter, what was decided, what failed, what still needs to be done, and which AI assistant last touched the project.
+
+When you move from Codex to Claude Code, Claude Code can read this file at the start of the session. When you move back from Claude Code to Codex, Codex can read the same file again. If you open a new chat because the old one is too long, the new chat can read the file and continue from the latest clean project state.
+
+You can let the skill read it automatically when the project starts, or you can ask for it directly with commands like:
+
+```text
+supermemory search
+supermemory update
+supermemory compress
+```
+
+The point is not to save every message. The point is to keep a short, useful, compressed project memory: what happened, what matters, and what should happen next.
+
+So instead of saying "here is everything we talked about for three days", you can say:
+
+```text
+Read .ai-handoff/SUPER_MEMORY.md first, then continue from the latest state.
+```
+
+This is useful for Codex, Claude Code, ChatGPT, new chats, second accounts, shared projects, and long coding sessions where context gets messy.
+
+## Kısaca Ne İşe Yarıyor?
+
+Bir projeyi yapay zeka ile geliştirdiğini düşün.
+
+Codex'te başlıyorsun. Projeyi anlatıyorsun, dosyaları düzenliyorsun, hataları çözüyorsun, test çalıştırıyorsun, kararlar alıyorsun ve sohbet yavaş yavaş uzuyor. Sonra limitin doluyor, context window doluyor veya sonraki iş için Claude Code'a geçmek istiyorsun.
+
+Normalde burada sorun çıkıyor:
+
+- yeni yapay zeka önce ne olduğunu bilmiyor
+- projeyi baştan anlatman gerekiyor
+- önemli kararlar eski sohbetin içinde kalıyor
+- başarısız denemeler tekrar yapılabiliyor
+- yeni asistan yanlış yerden başlayabiliyor
+
+Super Memory bunu basit bir fikirle çözüyor:
+
+> İşe yarayan proje hafızası sadece sohbetin içinde kalmasın, projenin kendi klasöründe de dursun.
+
+Projenin içinde küçük bir dosya oluşturur. Genelde dosya şudur:
+
+```text
+.ai-handoff/SUPER_MEMORY.md
+```
+
+Bu dosya sen çalıştıkça güncel tutulur. İçinde mevcut hedef, değişen dosyalar, önemli dosyalar, alınan kararlar, hata veren denemeler, kalan işler ve projeye en son hangi yapay zeka asistanının dokunduğu yazılı olur.
+
+Codex'ten Claude Code'a geçtiğinde Claude Code bu dosyayı sohbetin başında okuyabilir. Claude Code'dan tekrar Codex'e döndüğünde Codex aynı dosyayı okuyabilir. Eski sohbet çok uzadığı için yeni sohbet açarsan, yeni sohbet bu dosyayı okuyup projenin son temiz durumundan devam edebilir.
+
+Skill bunu proje başında otomatik okuyabilir veya sen doğrudan şu komutlarla isteyebilirsin:
+
+```text
+supermemory search
+supermemory update
+supermemory compress
+```
+
+Amaç her mesajı saklamak değildir. Amaç kısa, işe yarayan ve sıkıştırılmış bir proje hafızası tutmaktır: ne oldu, ne önemli, sırada ne var.
+
+Yani üç günlük konuşmayı baştan anlatmak yerine şunu diyebilirsin:
+
+```text
+Önce .ai-handoff/SUPER_MEMORY.md dosyasını oku, sonra son durumdan devam et.
+```
+
+Bu; Codex, Claude Code, ChatGPT, yeni sohbetler, ikinci hesaplar, paylaşılan projeler ve context'in karıştığı uzun kodlama oturumları için işe yarar.
+
 Languages:
 
 - [English](#english)
