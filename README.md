@@ -1,3 +1,32 @@
+<!-- CURRENT-SKILL-PUBLICATION -->
+![Super Memory](assets/collection-hero.svg)
+
+# Super Memory
+
+Project state and reliable handoffs across long sessions. This **1 workflow** help the assistant select tools, check evidence and produce reviewable results. They do not change model weights or guarantee better decisions.
+
+[![Download ChatGPT](https://img.shields.io/badge/ChatGPT-Download_ZIP-10a37f?style=for-the-badge)](https://github.com/yigityildiz0/super-memory/raw/refs/heads/main/downloads/ChatGPT.zip) [![Download Claude](https://img.shields.io/badge/Claude-Download_ZIP-d97757?style=for-the-badge)](https://github.com/yigityildiz0/super-memory/raw/refs/heads/main/downloads/Claude.zip)
+
+**ChatGPT:** the button downloads a plugin with all listed skills and supporting files. Use the personal-plugin/skill import supported by your account. A single-skill ChatGPT button downloads a one-skill plugin. **Claude:** unpack the collection ZIP, then upload its individual skill ZIPs; the outer collection is not a single Claude skill. Local Codex/Claude Code files and cloud-account installation are separate.
+
+Use natural English or Turkish requests. A slash-prefixed word typed in chat does not register a host command. Explicit local skill invocation uses the canonical skill name; available tools, network access and credentials remain host-dependent.
+
+## Included skills
+
+| Skill | What it solves / example request | ChatGPT | Claude |
+|---|---|---|---|
+| [`super-memory`](skills/common/super-memory/SKILL.md) | Always-on project memory skill for Codex, Claude Code, ChatGPT, and other AI coding sessions. Use automatically at the start of project or coding work, before planning, to locate or create `.ai-handoff/SUPER_MEMORY.md`, read the current packet, compare agent cursors, and keep the file updated after meaningful progress. Also use for `supermemory search`, `supermemory update`, `supermemory new`, `supermemory compress`, `supermemory delete`, `supermemory status`, Super Memory, resume, continue, handoff, context window full, limit reached, switch to Claude Code, switch to Codex, new chat continuation, deleted chat recovery, teammate handoff, devam et, kaldığım yerden devam et, limit bitti, context doldu, and project memory requests. | [↓ ZIP](packages/chatgpt/super-memory.zip) | [↓ ZIP](packages/claude/super-memory.zip) |
+
+## Installation and technical boundaries
+
+- Full canonical sources: `skills/common/`; provider packages: `packages/chatgpt/`, `packages/claude/`, `packages/codex/`.
+- Every Claude skill has at most 200 files and a description of at most 200 characters. ZIPs include all files of the selected provider source.
+- External services (Gemini, Parallel, Context7), local CLIs and subscriptions are not provided by these ZIPs. Report missing tools rather than simulating access.
+- Validation checks package integrity, paths, descriptions, source/package parity and hashes. It is not a live account-installation test or a clinical/financial effectiveness claim.
+- See [checksums](downloads/SHA256SUMS.txt), [provenance](PUBLICATION.md), and [third-party notices](THIRD_PARTY_NOTICES.md). Existing license and copyright files retain their scope; there is no blanket license grant over third-party content.
+
+<!-- END-CURRENT-SKILL-PUBLICATION -->
+
 # Super Memory
 
 **A simple file-based project memory system for Claude Code, Codex, ChatGPT, and long AI coding sessions.**

@@ -1,0 +1,8 @@
+interface:
+  display_name: "Super Memory"
+  short_description: "Project memory across Codex, Claude Code, and ChatGPT"
+  default_prompt: "Use $super-memory to search this project's Super Memory file, then continue from the latest state."
+
+policy:
+  allow_implicit_invocation: true
+
