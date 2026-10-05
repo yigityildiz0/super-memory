@@ -3,3 +3,8 @@
 *.md text eol=lf
 *.yaml text eol=lf
 
+# CURRENT PROVIDER PAYLOAD BYTES
+# Packages and checked-out provider sources must have identical bytes on every OS.
+skills/common/super-memory/** -text
+skills/codex/super-memory/** -text
+skills/claude/super-memory/** -text
