@@ -1,0 +1,17 @@
+{
+  "title": "Super Memory",
+  "summary": "Project-local memory and evidence-based handoffs for long AI sessions.",
+  "summary_tr": "Uzun AI oturumları için proje-yerel hafıza ve kanıtlı devir notları.",
+  "skills": [
+    "super-memory"
+  ],
+  "topics": [
+    "agent-skills",
+    "project-memory",
+    "handoff",
+    "developer-tools"
+  ],
+  "repository": "super-memory",
+  "base_commit": "21fa003d9af96c751a023b1536866494629ace2f",
+  "canonical_repository": "universal-ai-skill-library"
+}

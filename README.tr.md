@@ -1,25 +1,54 @@
-<!-- CURRENT-SKILL-PUBLICATION -->
-![Super Memory](assets/collection-hero.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <img src="assets/hero-light.svg" width="1280" alt="Super Memory — clear questions, repeatable workflows, reviewable results">
+</picture>
 
 # Super Memory
 
-1 skill: kaynak araştırma, araç seçimi ve doğrulanabilir sonuç üretme için hazır iş akışları. Modelin ağırlıklarını değiştirmez; sonuç kalitesi kullanılan kaynaklara ve araçlara bağlıdır.
+[English](README.md) · [Türkçe](README.tr.md)
 
-[![Download ChatGPT](https://img.shields.io/badge/ChatGPT-Download_ZIP-10a37f?style=for-the-badge)](https://github.com/yigityildiz0/super-memory/raw/refs/heads/main/downloads/ChatGPT.zip) [![Download Claude](https://img.shields.io/badge/Claude-Download_ZIP-d97757?style=for-the-badge)](https://github.com/yigityildiz0/super-memory/raw/refs/heads/main/downloads/Claude.zip)
+**Uzun AI oturumları için proje-yerel hafıza ve kanıtlı devir notları.**
 
-**ChatGPT:** bütün listelenen skilleri içeren eklenti paketini indir; hesabının desteklediği kişisel eklenti/skill içe aktarma akışını kullan. Tek-skill ChatGPT bağlantısı, tek skill içeren eklenti ZIP’idir. **Claude:** toplu ZIP’i aç, içindeki tekil skill ZIP’lerini ayrı ayrı yükle. Dış ZIP tek bir Claude skill’i değildir. Yerel kurulum bulut hesabına yükleme yapmaz.
+1 bakımı sürdürülen giriş noktası. Göreve göre birini seç; tüm kütüphaneyi bağlama yükleme.
 
-Türkçe veya İngilizce doğal isteklerle kullan; aşağıdaki örnekleri kendi soruna uyarla. Kısa kelimeler seçim ipuçlarıdır; bütün platformlarda aynı slash menüsünü oluşturmaz. Mevcut iş akışları ve güvenlik kuralları korunmuştur.
+[Başla](docs/INSTALL.md) · [Katalog](https://yigityildiz0.github.io/universal-ai-skill-library/) · [İndirmeler](DOWNLOADS.md) · [Bakım modeli](MAINTAINING.md)
 
-## Skill listesi
+## Yapmak istediğin işi seç
 
-| Skill | Çözdüğü sorun / örnek istek | ChatGPT | Claude |
-|---|---|---|---|
-| [`super-memory`](skills/common/super-memory/SKILL.md) | Always-on project memory skill for Codex, Claude Code, ChatGPT, and other AI coding sessions. Use automatically at the start of project or coding work, before planning, to locate or create `.ai-handoff/SUPER_MEMORY.md`, read the current packet, compare agent cursors, and keep the file updated after meaningful progress. Also use for `supermemory search`, `supermemory update`, `supermemory new`, `supermemory compress`, `supermemory delete`, `supermemory status`, Super Memory, resume, continue, handoff, context window full, limit reached, switch to Claude Code, switch to Codex, new chat continuation, deleted chat recovery, teammate handoff, devam et, kaldığım yerden devam et, limit bitti, context doldu, and project memory requests. | [↓ ZIP](packages/chatgpt/super-memory.zip) | [↓ ZIP](packages/claude/super-memory.zip) |
+<details open>
+<summary><strong>Yazılım geliştirme</strong> · 1</summary>
 
-## Teknik bilgiler
+| Skill | Ne işe yarar? |
+|---|---|
+| [super-memory](docs/skills/super-memory.tr.md) | Uzun oturum ve farklı ajanlar arasında kısa, proje-yerel devir notları ve kanıtı korur. |
 
-Claude açıklamaları en fazla 200 karakterdir; her skill paketi en fazla 200 dosya içerir. Kaynaklar, yardımcı betikler ve lisanslar paketlenir. API anahtarları, ücretli erişim, yerel CLI ve canlı veri bağlantıları paketin parçası değildir. Kontroller paket yapısını ve kaynak eşleşmesini doğrular; hesapta yükleme, klinik doğruluk veya yatırım performansı testi yapıldığı anlamına gelmez. [Bütünlük değerleri](downloads/SHA256SUMS.txt) · [Kaynak ve lisans bilgisi](THIRD_PARTY_NOTICES.md).
+</details>
 
-<!-- END-CURRENT-SKILL-PUBLICATION -->
+## Bir skill nasıl çalışır?
 
+~~~mermaid
+flowchart LR
+ A[Your goal] --> B[Match the skill]
+ B --> C[Load relevant module]
+ C --> D[Use available tools]
+ D --> E[Verify and explain]
+~~~
+
+Bu bir iş akışıdır; araç çalıştırıldığı veya bütün sonuçların doğrulandığı iddiası değildir. Her skill sayfasında örnek istek, tetikleme, mekanik, girdi/çıktı ve kaynak modüller var.
+
+## Tek kaynak, kalıcı koleksiyonlar
+
+Ana kaynak [Universal AI Skill Library](https://github.com/yigityildiz0/universal-ai-skill-library). Alan depoları aynı sürümün seçilmiş görünümleridir; ayrı ayrı çatallanıp elle düzenlenmez. Mevcut bağlantılar ve geçmiş korunur.
+
+[All collections / Tüm koleksiyonlar](COLLECTIONS.md) · [Legacy/community resources](LEGACY.md) · [Licenses & provenance](docs/LICENSE-SCOPE.md)
+
+## Dürüst kapsam
+
+- Skill kurmak model eğitmek veya hesap/araç bağlamak değildir.
+- Yerel dosya ile web hesabına yükleme farklıdır; desteklenen host akışını kullan.
+- Ek ücretli API veya model indirme otomatik yapılmaz.
+- Eski topluluk kataloğu güncel giriş noktalarının sayısına veya test iddiasına dahil değildir.
+- Kaynak lisansları korunur; bütün üçüncü taraf içeriğine tek lisans varsayılmaz.
+
+---
+Maintained by [Yigit Yildiz](https://github.com/yigityildiz0) · Source edition 2026.10.11

@@ -1,0 +1,61 @@
+{
+  "edition": "2026.10.11",
+  "files": [
+    {
+      "path": "super-memory/agents/openai.yaml",
+      "source_sha256": "5a4359da42901e92910bd28cd1ff8054c87841d274530e419a53f0ea112d1cee",
+      "published_sha256": "5a4359da42901e92910bd28cd1ff8054c87841d274530e419a53f0ea112d1cee",
+      "bytes": 282,
+      "legal_notice": false,
+      "modified": false
+    },
+    {
+      "path": "super-memory/LICENSE",
+      "source_sha256": "9ca56f0c63ac558bf438ed1909cc15d4b4fbeeaeb64fd75aebd46d47dd6d53e1",
+      "published_sha256": "9ca56f0c63ac558bf438ed1909cc15d4b4fbeeaeb64fd75aebd46d47dd6d53e1",
+      "bytes": 1070,
+      "legal_notice": true,
+      "modified": false
+    },
+    {
+      "path": "super-memory/scripts/supermemory.py",
+      "source_sha256": "a7cca40aef7d7a91cc08b7a8317d6e52ed19d41634daff846af63ed5457a308e",
+      "published_sha256": "a7cca40aef7d7a91cc08b7a8317d6e52ed19d41634daff846af63ed5457a308e",
+      "bytes": 12968,
+      "legal_notice": false,
+      "modified": false
+    },
+    {
+      "path": "super-memory/SKILL.md",
+      "source_sha256": "24fdedbff976519313cf7b091e0bf186655a88a7434f22a7bde1497fcc51a5b1",
+      "published_sha256": "3821be345bfa771dd34eff87f3f28da2f787eae890b05d1cf83d881c3da40c53",
+      "bytes": 5739,
+      "legal_notice": false,
+      "modified": true
+    }
+  ],
+  "licenses": [
+    {
+      "skill": "super-memory",
+      "declared": null,
+      "root_license_files": [
+        "super-memory/LICENSE"
+      ],
+      "notice_files": [
+        {
+          "path": "super-memory/LICENSE",
+          "sha256": "9ca56f0c63ac558bf438ed1909cc15d4b4fbeeaeb64fd75aebd46d47dd6d53e1"
+        }
+      ],
+      "modules_without_local_or_root_notice": [],
+      "status": "evidence-present-scope-review"
+    }
+  ],
+  "license_gaps": [],
+  "adaptations": [
+    {
+      "path": "super-memory/SKILL.md",
+      "reason": "portable host adaptation / private machine context removal"
+    }
+  ]
+}

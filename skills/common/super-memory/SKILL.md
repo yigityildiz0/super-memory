@@ -3,6 +3,11 @@ name: super-memory
 description: Always-on project memory skill for Codex, Claude Code, ChatGPT, and other AI coding sessions. Use automatically at the start of project or coding work, before planning, to locate or create `.ai-handoff/SUPER_MEMORY.md`, read the current packet, compare agent cursors, and keep the file updated after meaningful progress. Also use for `supermemory search`, `supermemory update`, `supermemory new`, `supermemory compress`, `supermemory delete`, `supermemory status`, Super Memory, resume, continue, handoff, context window full, limit reached, switch to Claude Code, switch to Codex, new chat continuation, deleted chat recovery, teammate handoff, devam et, kaldığım yerden devam et, limit bitti, context doldu, and project memory requests.
 ---
 
+
+## Portable execution
+
+Read [the portable execution adapter](PORTABLE.md) before using host-specific tool examples.
+
 # Super Memory
 
 Use this skill as a project-local memory system. It helps Codex, Claude Code, ChatGPT, and other agents continue from the same project state without relying on private chat history.
