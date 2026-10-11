@@ -6,4 +6,4 @@ Use README and DOWNLOADS for the current edition. Old tags/downloads may contain
 
 Türkçe: Güncel kapsam current-release.json ile tanımlanır. Eski katalog ve kaynaklar izlenebilirlik için korunur; eski sayı ve test iddiaları güncel kapsam değildir. Güncel README/indirmeleri kullan. Eski sürümler farklı sağlayıcı/host varsayımları içerebilir. Gemini Deep Research güncel sürümde yoktur.
 
-[Previous README at the preserved base commit](https://github.com/yigityildiz0/super-memory/blob/21fa003d9af96c751a023b1536866494629ace2f/README.md).
+[Previous README at the preserved base commit](https://github.com/yigityildiz0/super-memory/blob/b14767239d5b39f23eb15bcb942d9929cc02e366/README.md).
