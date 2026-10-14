@@ -4,57 +4,6 @@
     "split": false,
     "parts": [
       "super-memory"
-    ],
-    "modules": [],
-    "files": {
-      "LICENSE": {
-        "sha256": "9ca56f0c63ac558bf438ed1909cc15d4b4fbeeaeb64fd75aebd46d47dd6d53e1",
-        "locations": [
-          "super-memory/LICENSE"
-        ]
-      },
-      "PORTABLE.md": {
-        "sha256": "1ef57269f64ebf62c91d70aba00d1d1aabfbfc5163019a96fed3dc824826f0c9",
-        "locations": [
-          "super-memory/PORTABLE.md"
-        ]
-      },
-      "SKILL.md": {
-        "sha256": "91e293ddddd0c9da072ed6beabd825279ba0f40f67ba7b49a6f9cf18c9f9d85e",
-        "locations": [
-          "super-memory/SKILL.md"
-        ]
-      },
-      "agents/openai.yaml": {
-        "sha256": "5a4359da42901e92910bd28cd1ff8054c87841d274530e419a53f0ea112d1cee",
-        "locations": [
-          "super-memory/agents/openai.yaml"
-        ]
-      },
-      "scripts/supermemory.py": {
-        "sha256": "a7cca40aef7d7a91cc08b7a8317d6e52ed19d41634daff846af63ed5457a308e",
-        "locations": [
-          "super-memory/scripts/supermemory.py"
-        ]
-      },
-      "yigit/host-manifest.json": {
-        "sha256": "6cffde0a20615e5c4c0b5066e2cd277051e4e45d525ad987922db8b7f7fc5ac7",
-        "locations": [
-          "super-memory/yigit/host-manifest.json"
-        ]
-      },
-      "yigit/host-runtime.md": {
-        "sha256": "7340e97e88e7f03880a60b1d98aece1c9d0ac8ea8b7dcaebe04889699090f6ec",
-        "locations": [
-          "super-memory/yigit/host-runtime.md"
-        ]
-      },
-      "yigit/source-SKILL.md": {
-        "sha256": "3821be345bfa771dd34eff87f3f28da2f787eae890b05d1cf83d881c3da40c53",
-        "locations": [
-          "super-memory/yigit/source-SKILL.md"
-        ]
-      }
-    }
+    ]
   }
 }
