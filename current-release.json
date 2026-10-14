@@ -1,5 +1,5 @@
 {
-  "edition": "2026.10.14.3",
+  "edition": "2026.10.14.4",
   "repository": "super-memory",
   "canonical": "universal-ai-skill-library",
   "skills": [
@@ -9,13 +9,13 @@
     "super-memory": 1
   },
   "artifact_sha256": {
-    "downloads/ChatGPT.zip": "f1712fc14f65d01ca631afc96d5481c893c1fbd9f35c0eb4649a73ef3d7e6fc9",
+    "downloads/ChatGPT.zip": "c79582dc3e52b21288300c7a4cae649552bda8d8fe644fe8fe4f83a2b81e1d2b",
     "downloads/Claude.zip": "11e920ba13398d33fe8d8a4f95d11e2cc4132b78f6258dc970bac3d2d19fad29",
     "downloads/Codex.zip": "b77becc1e58dff84737e2ecbc10fae9c36de2289f1b908781dd172c60fcbed91",
     "downloads/Gemini.zip": "40ad705ee1d62250e12a1baf7f17214f1d0f5d443e2e2542a957f479659decc5",
     "downloads/portable-skills.zip": "619f0f4fcfb64163af7eaf89e4e187565aa25fffb2bee88dc945f2e9591bef9b",
     "packages/portable/super-memory.zip": "619f0f4fcfb64163af7eaf89e4e187565aa25fffb2bee88dc945f2e9591bef9b",
-    "packages/chatgpt/super-memory.zip": "f1712fc14f65d01ca631afc96d5481c893c1fbd9f35c0eb4649a73ef3d7e6fc9",
+    "packages/chatgpt/super-memory.zip": "c79582dc3e52b21288300c7a4cae649552bda8d8fe644fe8fe4f83a2b81e1d2b",
     "packages/claude/super-memory.zip": "f72f2f0c8bddc1b893d7da09ba86694a5a436cda24f4e276561b240cceec6b59",
     "packages/gemini/super-memory.zip": "58265d9064179a95ab483faa0f66b2b2aa56e662b5c3b039c9b2ebd7ffd31b2a"
   },
