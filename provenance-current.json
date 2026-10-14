@@ -1,5 +1,5 @@
 {
-  "edition": "2026.10.11",
+  "edition": "2026.10.14",
   "files": [
     {
       "path": "super-memory/agents/openai.yaml",
@@ -18,6 +18,14 @@
       "modified": false
     },
     {
+      "path": "super-memory/PORTABLE.md",
+      "source_sha256": "1ef57269f64ebf62c91d70aba00d1d1aabfbfc5163019a96fed3dc824826f0c9",
+      "published_sha256": "1ef57269f64ebf62c91d70aba00d1d1aabfbfc5163019a96fed3dc824826f0c9",
+      "bytes": 1720,
+      "legal_notice": false,
+      "modified": false
+    },
+    {
       "path": "super-memory/scripts/supermemory.py",
       "source_sha256": "a7cca40aef7d7a91cc08b7a8317d6e52ed19d41634daff846af63ed5457a308e",
       "published_sha256": "a7cca40aef7d7a91cc08b7a8317d6e52ed19d41634daff846af63ed5457a308e",
@@ -27,11 +35,11 @@
     },
     {
       "path": "super-memory/SKILL.md",
-      "source_sha256": "24fdedbff976519313cf7b091e0bf186655a88a7434f22a7bde1497fcc51a5b1",
+      "source_sha256": "3821be345bfa771dd34eff87f3f28da2f787eae890b05d1cf83d881c3da40c53",
       "published_sha256": "3821be345bfa771dd34eff87f3f28da2f787eae890b05d1cf83d881c3da40c53",
       "bytes": 5739,
       "legal_notice": false,
-      "modified": true
+      "modified": false
     }
   ],
   "licenses": [
@@ -52,10 +60,5 @@
     }
   ],
   "license_gaps": [],
-  "adaptations": [
-    {
-      "path": "super-memory/SKILL.md",
-      "reason": "portable host adaptation / private machine context removal"
-    }
-  ]
+  "adaptations": []
 }
