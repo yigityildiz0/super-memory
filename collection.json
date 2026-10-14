@@ -12,6 +12,6 @@
     "developer-tools"
   ],
   "repository": "super-memory",
-  "base_commit": "00840a6c42ecdc999ea7b5899f823b5b1e695306",
+  "base_commit": "18cfd66891316f60fc26a16768008edeac31a1f9",
   "canonical_repository": "universal-ai-skill-library"
 }
